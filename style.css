@@ -1,0 +1,135 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+}
+
+
+#container {
+    height: 450px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+#container img {
+    width: 100%;
+}
+
+#overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+#save {
+    position: absolute;
+    top: -50px;
+    width: 80px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#label {
+    position: absolute;
+    left: 20px;
+    width: 160px;
+    height: 40px;
+}
+
+
+#label ion-icon {
+    margin-right: 5px;
+    font-size: 12pt;
+}
+
+#label span {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+
+#share {
+    position: absolute;
+    right: 70px;
+    width: 40px;
+    height: 40px;
+}
+
+#menu {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+#label, #share, #menu {
+    bottom: -50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+}
+
+#share, #menu {
+    justify-content: center;
+}
+
+#container:hover #label, #container:hover #share, #container:hover #menu {
+    bottom: 20px;
+    transition: 0.2s linear;
+}
+
+#label:hover, #share:hover, #menu:hover {
+    background-color: white;
+}
+
+#container:not(:hover) #label, #share, #menu {
+    transition: 0.2s linear;
+}
+
+#container:hover #overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
+}
+
+#container:hover #save {    
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: 0.2s linear;
+}
+
+#save:hover {
+    background-color: red;
+}
+
+#container:not(:hover) #overlay {
+    transition: 0.2s linear;
+}
+
+#container:not(:hover) #save {
+    top: -50px;
+    right: 15px;
+    transition: 0.2s linear;
+}
+
+ion-icon {
+    font-size: 22px;
+    color: black;
+}
