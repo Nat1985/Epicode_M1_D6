@@ -1,0 +1,302 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#logo {
+    background-color: #222f3e;
+    padding: 5px;
+}
+
+#logo img {
+    width: 90px;
+    margin-left: 15px;
+}
+
+#menu {
+    background-color: #354758;
+    color: white;
+    padding: 5px;
+}
+
+#menu a:link {
+    text-decoration: none;
+}
+
+#menu a:visited {
+    text-decoration: none;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding-left: 15px;
+}
+
+#menu li {
+    margin-right: 20px;
+    list-style-type: none
+    ;
+}
+
+main {
+    background-color: #eaeded;
+    padding: 20px;
+    margin-top: 68px;
+}
+    main div {
+        margin-bottom: 20px;
+    }
+
+    #div_1 {
+        background-color: #f56600;
+        color: white;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    #div_2 {
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/bg-image.png);
+        background-size: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+        #div_2 h1 {
+            margin-bottom: 15px;
+            font-size: 18pt;
+        }
+
+        #div_2 h4 {
+            margin: 0px;
+            font-size: 11pt;
+        }
+
+    #div_3 {
+        background-color: white;
+        padding: 15px;
+    }
+        
+        #slogan {
+            font-size: 12pt;
+        }
+        #shop{
+            color: #017185;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #four_images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .four_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 240px;
+            height: 300px;
+            margin: 10px 0px 0px 0px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+            .overlay {
+                position: absolute;
+                top: 0px;
+                bottom: -20px;
+                left: 0px;
+                right: 0px;
+                background-color: #00000000;
+                z-index: 2;
+                transition: 0.5s;
+            }
+
+            .add-to-cart {
+                color: #ffffff;
+                position: absolute;
+                left: 22px;
+                bottom: -70px;
+                font-size: 12pt;
+                background-color: #306f83;
+                padding: 7px 50px 7px 50px;
+                border-radius: 10px;
+                z-index: 3;
+                box-shadow: 5px 5px 10px #00000075;
+                display: flex;
+            }
+
+            .add-to-cart ion-icon {
+                font-size: 14pt;
+                margin-right: 5px;
+                
+            }
+
+            .heart {
+                position: absolute;
+                top: -70px;
+                right: 20px;
+                z-index: 3;
+            }
+
+            .heart ion-icon {
+                font-size: 22pt;
+                color: white;
+            }
+
+            .four_img:hover .overlay {
+                background-color: #00000062;
+            }
+
+            .four_img:hover .add-to-cart {
+                bottom: 0px;
+                transition: 0.3s;
+            }
+
+            .four_img:hover .heart {
+                top: 20px;
+                transition: 0.3s;
+            }
+
+            .four_img:not(:hover) .add-to-cart, .four_img:not(:hover) .heart {
+                transition: 1s;
+            }
+
+            .four_img:not(:hover) .overlay {
+                transition: 1.5s;
+            }
+
+        .four_img img {
+            height: 100%;
+            z-index: 1;
+        }
+
+    #div_3_b {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+        .four_img_b {
+            width: 240px;
+            height: 300px;
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+            #sixteen_img {
+                background-color: white;
+                height: 240px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                padding: 0px;
+            }
+
+            .sixteen_img {
+                background-color: white;
+                width: 110px;
+                height: 50%;
+                margin: 0px 0px 0px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            .caption {
+                margin-top: 5px;
+                font-size: 8pt;
+                width: 100%;
+                text-align: left;
+                margin-left: 10px;
+            }
+
+            .sixteen_img img {
+                width: 120%;
+            }
+
+            .seemore {
+                font-size: 8pt;
+                color: #017185;
+            }
+    
+    h2 {
+        margin: 0px 0px 5px 0px;
+    }
+
+    #div_4 img {
+        width: 100%;
+    }
+
+    #div_4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div_5 img {
+        width: 100%;
+    }
+
+    #div_5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    #slogan_shop {
+        margin-top: 3px;
+        margin-bottom: 10px;
+    }
+
+    #back_to_top {
+        text-align: center;
+        background-color: #354758;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    a:link, a:visited {
+        color: white;
+    }
+
+    #amazon_bottom {
+        background-color: #222f3e;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #amazon_bottom img {
+        width: 13%;
+    }
